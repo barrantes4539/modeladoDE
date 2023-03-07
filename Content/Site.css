@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: #fff;
+    flex-grow: 1;
+}
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}

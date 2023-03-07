@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="modeladoDE.Site_Mobile" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="head" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Mobile Master Page</h1>
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="content" />
+        </section>
+        <friendlyUrls:ViewSwitcher runat="server" />
+    </div>
+        <!DOCTYPE html>
+<html>
+<head runat="server">
+	<title>Empresa de software</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="dashEmpleado.css" />
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form2" runat="server">
+		<nav>
+			<div class="logo">
+				<a href="#">DataEmpire</a>
+			</div>
+			<ul class="menu">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<footer>
+			<asp:ContentPlaceHolder ID="footer" runat="server">
+			</asp:ContentPlaceHolder>
+		</footer>
+	</form>
+</body>
+</html>
+    </form>
+</body>
+</html>

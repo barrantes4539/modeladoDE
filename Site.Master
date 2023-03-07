@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="modeladoDE.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+	<title>Empresa de software</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="/Content/Site.css" />
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server">
+        <header>
+            <h1>Plan Operativo Anual</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mi plan</a></li>
+                    <li><a href="#">Seguimiento</a></li>
+                    <li><a href="#">Configuración</a></li>
+                </ul>
+            </nav>
+        </header>
+		<div class="content">
+			<asp:ContentPlaceHolder ID="content" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<footer>
+			<asp:ContentPlaceHolder ID="footer" runat="server">
+			</asp:ContentPlaceHolder>
+		</footer>
+	</form>
+</body>
+</html>
